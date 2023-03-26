@@ -8,8 +8,8 @@ port = 3000
 # Deactivate build command to prevent wrangler from restarting the build on any
 # code change. Instead we start the build separately (in watch mode).
 [build]
-command = ""
-watch_dir = []
+command = "npm run build:main"
+watch_dir = ["../../../src"]
 
 [assets]
 bucket = "../../../dist/client"

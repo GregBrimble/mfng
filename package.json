@@ -22,7 +22,7 @@
     "start:main": "wrangler dev -c src/workers/main/wrangler.toml -l",
     "start:rsc": "wrangler dev -c src/workers/rsc/wrangler.toml -l",
     "prestart": "npm run build",
-    "start": "concurrently -c auto -k 'npm run build:* -- --watch' 'npm run start:*'",
+    "start": "concurrently -c auto 'npm run start:*'",
     "test": "jest --no-coverage"
   },
   "dependencies": {
